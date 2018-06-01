@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "shortName": "ml2",
+  "author": "Microsoft",
+  "name": "Machine learning base app",
+  "classifications": [
+    "Console",
+    "ML",
+    "ML.NET",
+    "AI"
+  ],
+  "symbols": {
+    "datasource": {
+      "type": "parameter",
+      "parameters": null,
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "stackoverflow/stack-overflow-2018-developer-survey",
+          "description": "Individual responses on the 2018 Developer Survey fielded by Stack Overflow"
+        },
+        {
+          "choice": "donorschoose/io",
+          "description": "Help DonorsChoose.org connect donors with projects they care about"
+        },
+        {
+          "choice": "jameslko/gun-violence-data",
+          "description": "Comprehensive record of over 260k US gun violence incidents from 2013-2018"
+        },
+        {
+          "choice": "ruslankl/mice-protein-expression",
+          "description": "Expression levels of 77 proteins measured in the cerebral cortex"
+        },
+        {
+          "choice": "unitednations/global-commodity-trade-statistics",
+          "description": "Three decades of global trade flows"
+        },
+        {
+          "choice": "datafiniti/grammar-and-online-product-reviews",
+          "description": "A list of 71,045 online reviews from 1,000 different products."
+        },
+        {
+          "choice": "jessicali9530/honey-production",
+          "description": "Honey Production Figures and Prices by National Agricultural Statistics Service"
+        },
+        {
+          "choice": "ainslie/usda-wasde-monthly-corn-soybean-projections",
+          "description": "Prices with USDA WASDE Monthly Projections"
+        },
+        {
+          "choice": "goldenoakresearch/us-acs-mortgage-equity-loans-rent-statistics",
+          "description": "Income, Age, Marriage, Mortgage, Home Equity Loan & Demographics"
+        },
+        {
+          "choice": "vikasg/russian-troll-tweets",
+          "description": "200,000 malicious-account tweets captured by NBC"
+        }
+      ],
+      "description": "Datasource reference",
+      "onlyIf": null
+    }
+  },
+  "identity": "63FD0AF1-A8A5-72F7-8557-845027135C55",
+  "postActions": [
+    {
+      "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+      "manualInstructions": [
+        {
+          "text": "run setup.cmd in order to finish the instalation"
+        }
+      ],
+      "continueOnError": true,
+      "description ": "setups the project by calling setup.cmd",
+      "args": {
+        "executable": "setup.cmd"
+      }
+    }
+  ]
+}
